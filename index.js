@@ -13,7 +13,7 @@ module.exports = function ifcConvert(source, dest, options) {
         if (options && options.path) {
             ifcConvertPath = options.path + '/IfcConvert';
         } else {
-            ifcConvertPath = 'IfcConvert';
+            ifcConvertPath = './IfcConvert';
         }
 
         if (!fs.existsSync(source)) {
